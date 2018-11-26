@@ -1,4 +1,4 @@
-/* Summary reporter 
+/* Summary reporter
 
 Intended to be added to the default reporter.
 See README.md for installation.
@@ -18,10 +18,10 @@ const INDENT = '  ';
 
 class SummaryReporter {
   /**
-   * @param {*} globalConfig 
-   * @param {*} options 
+   * @param {*} globalConfig
+   * @param {*} options
    */
-  constructor({rootDir}, {failuresOnly=true}={}) {
+  constructor({rootDir}, {failuresOnly=false}={}) {
     this._rootDir = rootDir;
     this._failuresOnly = failuresOnly;
     this._indent = INDENT;
